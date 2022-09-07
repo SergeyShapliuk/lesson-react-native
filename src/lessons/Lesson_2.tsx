@@ -7,6 +7,7 @@ import {
 } from "react-native";
 import React, {useState} from "react";
 import MemoSvgComponent from "../svg/MySvg";
+import { useNavigation } from "@react-navigation/native";
 
 type TaskType = {
     key: string
@@ -22,6 +23,7 @@ const PADDING = 30
 const wait = (timeout:any) => {
     return new Promise(resolve => setTimeout(resolve, timeout));
 }
+
 export default function Lesson_2() {
     const [task, setTask] = useState<TaskType[]>([
         {
