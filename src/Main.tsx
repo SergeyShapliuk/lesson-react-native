@@ -27,7 +27,7 @@ export default function Main() {
         // </NavigationContainer>
         <NavigationContainer>
             <View style={styles.container}>
-                <Tab.Navigator>
+                <Tab.Navigator screenOptions={{headerShown:false}}>
                     <Tab.Screen name="Home" component={HomeScreen}/>
                     <Tab.Screen name="Details" component={DetailsScreen}/>
                     <Tab.Screen name="Users" component={UsersScreen}/>
