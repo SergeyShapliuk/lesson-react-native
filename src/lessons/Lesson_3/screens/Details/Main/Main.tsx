@@ -1,7 +1,7 @@
 import React from "react";
 import {FlatList, ListRenderItem, Text, TouchableOpacity, View} from "react-native";
-import {data, DataType} from "../../../data/data";
-import { useAppNavigation } from "../../../types/types";
+import {data, DataType} from "../../../../../data/data";
+import { useAppNavigation } from "../../../../../types/types";
 
 
 export function MainScreen() {

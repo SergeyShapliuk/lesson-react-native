@@ -1,15 +1,15 @@
 import {StatusBar} from 'expo-status-bar';
 import React from 'react';
 import {StyleSheet, View, Text, ScrollView} from 'react-native';
-import Lesson_3  from './src/lessons/Lesson_3';
-import Main from './src/Main';
+import Lessons from './src/Lessons';
+
 
 
 export default function App() {
     return (
 
         <View style={styles.container}>
-            <Lesson_3/>
+            <Lessons/>
             <StatusBar style="auto"/>
         </View>
 

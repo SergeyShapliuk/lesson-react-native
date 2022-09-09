@@ -6,7 +6,7 @@ import {
     View
 } from "react-native";
 import React, {useState} from "react";
-import MemoSvgComponent from "../svg/MySvg";
+import MemoSvgComponent from "../../svg/MySvg";
 import { useNavigation } from "@react-navigation/native";
 
 type TaskType = {

@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import {Button, Text, View} from "react-native";
-import {DetailsPropsType, NestedStack, useAppNavigation} from "../../types/types";
+import {DetailsPropsType, NestedStack, useAppNavigation} from "../../../../types/types";
 import { MainScreen } from "./Main/Main";
 import { MainDetailsScreen } from "./MainDetails/MainDetails";
 

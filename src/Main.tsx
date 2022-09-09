@@ -2,12 +2,12 @@ import React from "react";
 import {View,StyleSheet} from "react-native";
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {HomeScreen} from "./screens/Home/HomeScreen"
-import {DetailsScreen} from "./screens/Details/DetailsScreen"
-import {UsersScreen} from "./screens/Users/UsersScreen"
 import { RootStackParamList } from "./types/types";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createDrawerNavigator } from "@react-navigation/drawer";
+import { HomeScreen } from "./lessons/Lesson_3/screens/Home/HomeScreen";
+import { DetailsScreen } from "./lessons/Lesson_3/screens/Details/DetailsScreen";
+import { UsersScreen } from "./lessons/Lesson_3/screens/Users/UsersScreen";
 
 
 // const Stack = createNativeStackNavigator<RootStackParamList>();

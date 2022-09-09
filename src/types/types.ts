@@ -19,6 +19,10 @@ export type RootStackParamList={
     Home:undefined
     Details: NavigatorScreenParams<NestedStack>
     Users:undefined
+    Pokemons:undefined
+    CurrentPokemons:{
+        url:string
+    }
 }
 export type NestedStack={
     Main:undefined
@@ -26,10 +30,13 @@ export type NestedStack={
       id:number
     }
 }
+
+export type PokemonProps=NativeStackScreenProps<RootStackParamList, "CurrentPokemons">
+    
 export type MainDetailsPropsType=CompositeScreenProps<BottomTabScreenProps<NestedStack, "MainDetails">,
     StackScreenProps<RootStackParamList>>
 export type DetailsPropsType=NativeStackScreenProps<RootStackParamList, "Details">
 
-type UseNavigatioType=NavigationProp<RootStackParamList>
+export type UseNavigatioType=NavigationProp<RootStackParamList>
 
 export const useAppNavigation=()=>useNavigation<UseNavigatioType>()
